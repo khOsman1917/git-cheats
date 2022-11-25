@@ -1,0 +1,79 @@
+{
+    "mainTitle":"",
+    "mainDesc": "",
+    "cheats": [
+      {
+         "title": "SETUP",
+         "description": "Configuring user information used across all local repositories",
+          "commands": [
+            {           
+               "cTitle": "user.name",
+               "command": "git config --global user.name [firstname lastname]",
+               "cDes": "set a name that is identifiable for credit when review version history"   
+            },
+            {            
+               "cTitle": "user.email",
+               "command": "git config --global user.email [valid-email]",
+               "cDes": "set an email address that will be associated with each history marker"   
+            },
+            {
+               "cTitle": "color.ui",
+               "command": "git config --global color.ui auto",
+               "cDes": "set automatic command line coloring for Git for easy reviewing"   
+            }
+          ]
+      },
+      {
+         "title": "INIT",
+         "description": "Configuring user information, initializing and cloning repositories",
+          "commands": [
+            {
+               "cTitle": "init",
+               "command": "git init",
+               "cDes": "initialize an existing directory as a Git repository"   
+            },
+            {
+               "cTitle": "clone",
+               "command": "git clone [url]",
+               "cDes": "retrieve an entire repository from a hosted location via URL"   
+            }
+          ]
+      },
+      {
+        "title": "STAGE & SNAPSHOT",
+        "description": "Working with snapshots and the Git staging area",
+         "commands": [
+           {
+                "cTitle": "status",
+                "command": "git status",
+                "cDes": "show modified files in working directory, staged for your next commit"   
+           },
+           {
+                "cTitle": "add",
+                "command": "git add [file]",
+                "cDes": "add a file as it looks now to your next commit (stage)"   
+           },
+           {
+                "cTitle": "reset",
+                "command": "git reset [file]",
+                "cDes": "unstage a file while retaining the changes in working directory"   
+            },
+            {
+                "cTitle": "diff",
+                "command": "git diff",
+                "cDes": "diff of what is changed but not staged"   
+            },
+            {
+                "cTitle": "diff",
+                "command": "git diff --staged",
+                "cDes": "diff of what is staged but not yet commited"   
+            },
+            {
+                "cTitle": "commit",
+                "command": "git commit -m [descriptive message]",
+                "cDes": "commit your staged content as a new commit snapshot"   
+            }
+         ]
+     }
+    ]
+}
